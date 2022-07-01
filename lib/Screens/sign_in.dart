@@ -2,6 +2,7 @@ import 'package:easy_share/Screens/register_screen.dart';
 import 'package:easy_share/components/reusable_button.dart';
 import 'package:easy_share/components/text_fields.dart';
 import 'package:easy_share/constant.dart';
+import 'package:easy_share/home.dart';
 import 'package:flutter/material.dart';
 
 class SignIn extends StatefulWidget {
@@ -134,7 +135,10 @@ class _SignInState extends State<SignIn> {
                           child: Container(
                             height: 65,
                             child: ReusableButton(
-                              onTap: () {},
+                              onTap: () => Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Home())),
                               specificColor: Colors.grey.shade200,
                               specificText: 'Sign in',
                               textStyle: kButtonText,

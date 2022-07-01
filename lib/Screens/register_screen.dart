@@ -9,6 +9,8 @@ import '../constant.dart';
 class RegisterScreen extends StatelessWidget {
   static const String id = 'registerScreen';
 
+  bool isPasswordVisible = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,6 +70,7 @@ class RegisterScreen extends StatelessWidget {
                       height: 20,
                     ),
                     ReusableTextField(
+                      keyboardType: TextInputType.emailAddress,
                       hintText: 'Email',
                       labelText: 'Email',
                       onChanged: (value) {},
@@ -84,6 +87,11 @@ class RegisterScreen extends StatelessWidget {
                       height: 20,
                     ),
                     ReusableTextField(
+                      icon: Icon(
+                        Icons.remove_red_eye,
+                        color: Colors.white,
+                      ),
+                      ObscureText: true,
                       hintText: 'Password',
                       labelText: 'Password',
                       onChanged: (value) {},
