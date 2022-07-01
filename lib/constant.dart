@@ -27,3 +27,37 @@ const kButtonText = TextStyle(
   fontWeight: FontWeight.bold,
   fontFamily: 'poppins',
 );
+
+const kSignInHeadText = TextStyle(
+  color: Colors.white,
+  fontSize: 27,
+  fontWeight: FontWeight.bold,
+  fontFamily: 'poppins',
+  letterSpacing: 2.5,
+);
+
+const kSignInSubText = TextStyle(
+  color: Colors.white,
+  fontSize: 24,
+  fontFamily: 'poppinsLight',
+  letterSpacing: 2.5,
+);
+
+const kBodySmallText = TextStyle(
+  color: Colors.white,
+  fontSize: 12,
+  fontFamily: 'poppins',
+);
+
+const kBodyTextStyle = TextStyle(
+  color: Colors.white,
+  fontSize: 26,
+  fontWeight: FontWeight.bold,
+  fontFamily: 'poppins',
+);
+
+const kWelcomeText = TextStyle(
+  color: Colors.white,
+  fontSize: 26,
+  fontFamily: 'poppinsLight',
+);
